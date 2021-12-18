@@ -1,0 +1,126 @@
+//Warhamer One Hand
+  &{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|strength_mod}]]}} {{rname=Warhamer}} 
+    {{r1=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{always=1}} 
+    {{r2=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{attack=1}} 
+    {{range=Mele}} {{damage=1}} {{dmg1flag=1}} 
+    {{dmg1=[[1d8+@{selected|strength_mod}]]}} {{dmg1type=Bludgeoning}} {{charname=@{selected|character_name}}}
+    
+//Warhamer Two Hands
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|strength_mod}]]}} {{rname=Warhamer}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{attack=1}} 
+  {{range=Mele}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d10+@{selected|strength_mod}]]}} {{dmg1type=Bludgeoning}} {{charname=@{selected|character_name}}}
+  
+//Shortsword+1
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|strength_mod}]]}} {{rname=Talon}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|strength_mod}+1]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|strength_mod}+1]]}} {{attack=1}} 
+  {{range=Mele}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d6+1+@{selected|strength_mod}]]}} {{dmg1type=Piercing}} {{charname=@{selected|character_name}}}
+  
+//Divine Smite
+&{template:atkdmg} {{rname=Divine Smite}} {{{attack=1}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[2d8]]}} {{dmg1type=Radiant}} {{charname=@{selected|character_name}}}
+//Inspiring Smite
+&{template:atkdmg} {{rname=Inspiring Smite}} {{{attack=1}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[2d8+@{selected|base_level}]]}} {{dmg1type=TempHP}} {{charname=@{selected|character_name}}}
+
+//Eldricht Blast
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|charisma_mod}]]}} {{rname=Eldrich Blast}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|charisma_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|charisma_mod}]]}} {{attack=1}} 
+  {{range=120 ft}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d10+@{selected|charisma_mod}]]}} {{dmg1type=Force}} {{charname=@{selected|character_name}}}
+  
+//Dagger
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|dexterity_mod}]]}} {{rname=Dagger}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{attack=1}} 
+  {{range=20/60 ft}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d4+@{selected|dexterity_mod}]]}} {{dmg1type=Pircing}} {{charname=@{selected|character_name}}}
+  
+//Form of Dread
+&{template:atkdmg} {{rname=Form of Dread}} {{{attack=1}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d10+@{selected|base_level}]]}} {{dmg1type=TempHP}} {{charname=@{selected|character_name}}}
+
+//Quarterstasff
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|strength_mod}]]}} {{rname=Quarterstaf}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{attack=1}} 
+  {{range=Mele}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d6+@{selected|strength_mod}]]}} {{dmg1type=Bludgeoning}} {{charname=@{selected|character_name}}}
+
+//Shillelagh
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|wisdom_mod}]]}} {{rname=Shillelagh}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|wisdom_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|wisdom_mod}]]}} {{attack=1}} 
+  {{range=Mele}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d8+@{selected|wisdom_mod}]]}} {{dmg1type=Bludgeoning}} {{charname=@{selected|character_name}}}
+  
+//Produce flame
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|wisdom_mod}]]}} {{rname=Produce Flame}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|wisdom_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|wisdom_mod}]]}} {{attack=1}} 
+  {{range=30 ft}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d8]]}} {{dmg1type=Fire}} {{charname=@{selected|character_name}}}
+  
+//Breath Weapon
+//Warcaster (Concentracion)
+//Combat WildShape
+
+//Unarmored
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|strength_mod}]]}} {{rname=Unarmored}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{attack=1}} {{range=Mele}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d8+@{selected|strength_mod}]]}} {{dmg1type=Bludgeoning}} {{charname=@{selected|character_name}}}
+  
+//Unarmored Grappled
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|strength_mod}]]}} {{rname=Unarmored}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{attack=1}} 
+  {{range=Mele}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d6+1d4+@{selected|strength_mod}]]}} {{dmg1type=Bludgeoning}} {{charname=@{selected|character_name}}}
+  
+//Hand Axe
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|strength_mod}]]}} {{rname=Hand Axe}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|strength_mod}]]}} {{attack=1}} 
+  {{range=20/60 ft}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d6+@{selected|strength_mod}]]}} {{dmg1type=Slashing}} {{charname=@{selected|character_name}}}
+  
+//Second Wind
+&{template:atkdmg} {{rname=Second Wind}} {{{attack=1}} {{damage=1}} {{dmg1flag=1}} 
+{{dmg1=[[1d10+@{selected|base_level}]]}} {{dmg1type=HP}} {{charname=@{selected|character_name}}}
+
+//Necrotic Shourd
+//Necrotic Shourd Damage
+&{template:atkdmg} {{rname=Necrotic Shourd Damage}} {{{attack=1}} {{damage=1}} {{dmg1flag=1}} 
+{{dmg1=[[@{selected|base_level}]]}} {{dmg1type=Necrotic}} {{charname=@{selected|character_name}}}
+
+//ShortBow
+//ShortBow Hedashot
+//Shortsword
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|dexterity_mod}]]}} {{rname=Shortsword}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{attack=1}} 
+  {{range=Mele}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d6+@{selected|dexterity_mod}]]}} {{dmg1type=Pircing}} {{charname=@{selected|character_name}}}
+  
+//Dagger
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|dexterity_mod}]]}} {{rname=Dagger}} 
+{{r1=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{always=1}} 
+{{r2=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{attack=1}} 
+{{range=60 ft}} {{damage=1}} {{dmg1flag=1}} 
+{{dmg1=[[1d4+@{selected|dexterity_mod}]]}} {{dmg1type=Pircing}} {{charname=@{selected|character_name}}}
+
+//Dagger Off Hand
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|dexterity_mod}]]}} {{rname=Dagger}} 
+{{r1=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{always=1}} 
+{{r2=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{attack=1}} 
+{{range=60 ft}} {{damage=1}} {{dmg1flag=1}} 
+{{dmg1=[[1d4]]}} {{dmg1type=Pircing}} {{charname=@{selected|character_name}}}
+
+//Sneak Atack 
+&{template:atkdmg} {{rname=Sneak Atack}} {{{attack=1}} {{damage=1}} {{dmg1flag=1}} 
+{{dmg1=[[2d6]]}}  {{charname=@{selected|character_name}}}
