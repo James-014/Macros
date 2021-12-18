@@ -1,8 +1,8 @@
 @{selected|wtype} &{template:simple}{{always=1}}?{Saving Throw?
-  |STR,{{rname=Strength Save&#125;&#125;{{mod=@{npc_str_save}&#125;&#125; {{r1=[[1d20+@{npc_str_save}]]&#125;&#125;{{r2=[[1d20+@{npc_str_save}]]&#125;&#125;
-  |DEX,{{rname=Dexterity Save&#125;&#125;{{mod=@{npc_dex_save}&#125;&#125; {{r1=[[1d20+@{npc_dex_save}]]&#125;&#125;{{r2=[[1d20+@{npc_dex_save}]]&#125;&#125;
-  |CON,{{rname=Constitution Save&#125;&#125;{{mod=@{npc_con_save}&#125;&#125; {{r1=[[1d20+@{npc_con_save}]]&#125;&#125;{{r2=[[1d20+@{npc_con_save}]]&#125;&#125;
-  |INT,{{rname=Intelligence Save&#125;&#125;{{mod=@{npc_int_save}&#125;&#125; {{r1=[[1d20+@{npc_int_save}]]&#125;&#125;{{r2=[[1d20+@{npc_int_save}]]&#125;&#125;
-  |WIS,{{rname=Wisdom Save&#125;&#125;{{mod=@{npc_wis_save}&#125;&#125; {{r1=[[1d20+@{npc_wis_save}]]&#125;&#125;{{r2=[[1d20+@{npc_wis_save}]]&#125;&#125;
-  |CHA,{{rname=Charisma Save&#125;&#125;{{mod=@{npc_cha_save}&#125;&#125; {{r1=[[1d20+@{npc_cha_save}]]&#125;&#125;{{r2=[[1d20+@{npc_cha_save}]]&#125;&#125;
+  |STR,{{rname=Strength Save&#125;&#125;{{mod=@{selected|strength_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|strength_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|strength_save_bonus}]]&#125;&#125;
+  |DEX,{{rname=Dexterity Save&#125;&#125;{{mod=@{selected|dexterity_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|dexterity_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|dexterity_save_bonus}]]&#125;&#125;
+  |CON,{{rname=Constitution Save&#125;&#125;{{mod=@{selected|constitution_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|constitution_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|constitution_save_bonus}]]&#125;&#125;
+  |INT,{{rname=Intelligence Save&#125;&#125;{{mod=@{selected|inteligence_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|inteligence_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|inteligence_save_bonus}]]&#125;&#125;
+  |WIS,{{rname=Wisdom Save&#125;&#125;{{mod=@{selected|wisdom_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|wisdom_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|wisdom_save_bonus}]]&#125;&#125;
+  |CHA,{{rname=Charisma Save&#125;&#125;{{mod=@{selected|charisma_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|charisma_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|charisma_save_bonus}]]&#125;&#125;
 }{{charname=@{character_name}}} 
