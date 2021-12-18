@@ -1,20 +1,20 @@
-@{selected|wtype} &{template:simple}{{always=1}}?{Ability?
-  |Acrobatics,{{rname=Acrobatics&#125;&#125;{{mod=@{npc_acrobatics}&#125;&#125; {{r1=[[1d20+@{npc_acrobatics}]]&#125;&#125;{{r2=[[1d20+@{npc_acrobatics}]]&#125;&#125;
-  |Animal Handling,{{rname=Animal Handling&#125;&#125;{{mod=@{npc_animal_handling}&#125;&#125; {{r1=[[1d20+@{npc_animal_handling}]]&#125;&#125;{{r2=[[1d20+@{npc_animal_handling}]]&#125;&#125;
-  |Arcana,{{rname=Arcana&#125;&#125;{{mod=@{npc_arcana}&#125;&#125; {{r1=[[1d20+@{npc_arcana}]]&#125;&#125;{{r2=[[1d20+@{npc_arcana}]]&#125;&#125;
-  |Athletics,{{rname=Athletics&#125;&#125;{{mod=@{npc_athletics}&#125;&#125; {{r1=[[1d20+@{npc_athletics}]]&#125;&#125;{{r2=[[1d20+@{npc_athletics}]]&#125;&#125;
-  |Deception,{{rname=Deception&#125;&#125;{{mod=@{npc_deception}&#125;&#125; {{r1=[[1d20+@{npc_deception}]]&#125;&#125;{{r2=[[1d20+@{npc_deception}]]&#125;&#125;
-  |History,{{rname=History&#125;&#125;{{mod=@{npc_history}&#125;&#125; {{r1=[[1d20+@{npc_history}]]&#125;&#125;{{r2=[[1d20+@{npc_history}]]&#125;&#125;
-  |Insight,{{rname=Insight&#125;&#125;{{mod=@{npc_insight}&#125;&#125; {{r1=[[1d20+@{npc_insight}]]&#125;&#125;{{r2=[[1d20+@{npc_insight}]]&#125;&#125;
-  |Intimidation,{{rname=Intimidation&#125;&#125;{{mod=@{npc_intimidation}&#125;&#125; {{r1=[[1d20+@{npc_intimidation}]]&#125;&#125;{{r2=[[1d20+@{npc_intimidation}]]&#125;&#125;
-  |Investigation,{{rname=Investigation&#125;&#125;{{mod=@{npc_investigation}&#125;&#125; {{r1=[[1d20+@{npc_investigation}]]&#125;&#125;{{r2=[[1d20+@{npc_investigation}]]&#125;&#125;
-  |Medicine,{{rname=Medicine&#125;&#125;{{mod=@{npc_medicine}&#125;&#125; {{r1=[[1d20+@{npc_medicine}]]&#125;&#125;{{r2=[[1d20+@{npc_medicine}]]&#125;&#125;
-  |Nature,{{rname=Nature&#125;&#125;{{mod=@{npc_nature}&#125;&#125; {{r1=[[1d20+@{npc_nature}]]&#125;&#125;{{r2=[[1d20+@{npc_nature}]]&#125;&#125;
-  |Perception,{{rname=Perception&#125;&#125;{{mod=@{npc_perception}&#125;&#125; {{r1=[[1d20+@{npc_perception}]]&#125;&#125;{{r2=[[1d20+@{npc_perception}]]&#125;&#125;
-  |Performance,{{rname=Performance&#125;&#125;{{mod=@{npc_performance}&#125;&#125; {{r1=[[1d20+@{npc_performance}]]&#125;&#125;{{r2=[[1d20+@{npc_performance}]]&#125;&#125;
-  |Persuasion,{{rname=Persuasion&#125;&#125;{{mod=@{npc_persuasion}&#125;&#125; {{r1=[[1d20+@{npc_persuasion}]]&#125;&#125;{{r2=[[1d20+@{npc_persuasion}]]&#125;&#125;
-  |Religion,{{rname=Religion&#125;&#125;{{mod=@{npc_religion}&#125;&#125; {{r1=[[1d20+@{npc_religion}]]&#125;&#125;{{r2=[[1d20+@{npc_religion}]]&#125;&#125;
-  |Sleight of Hand,{{rname=Sleight of Hand&#125;&#125;{{mod=@{npc_sleight_of_hand}&#125;&#125; {{r1=[[1d20+@{npc_sleight_of_hand}]]&#125;&#125;{{r2=[[1d20+@{npc_sleight_of_hand}]]&#125;&#125;
-  |Stealth,{{rname=Stealth&#125;&#125;{{mod=@{npc_stealth}&#125;&#125; {{r1=[[1d20+@{npc_stealth}]]&#125;&#125;{{r2=[[1d20+@{npc_stealth}]]&#125;&#125;
-  |Survival,{{rname=Survival&#125;&#125;{{mod=@{npc_survival}&#125;&#125; {{r1=[[1d20+@{npc_survival}]]&#125;&#125;{{r2=[[1d20+@{npc_survival}]]&#125;&#125;
-}{{charname=@{character_name}}} 
+@{selected|wtype} &{template:simple}{{always=1}}{{charname=@{character_name}}}?{Ability?
+  |Acrobatics,{{rname=Acrobatics&#125;&#125;{{mod=@{acrobatics_bonus}&#125;&#125; {{r1=[[1d20+@{acrobatics_bonus}]]&#125;&#125;{{r2=[[1d20+@{acrobatics_bonus}]]&#125;&#125;
+  |Animal Handling,{{rname=Animal Handling&#125;&#125;{{mod=@{animal_handling_bonus}&#125;&#125; {{r1=[[1d20+@{animal_handling_bonus}]]&#125;&#125;{{r2=[[1d20+@{animal_handling_bonus}]]&#125;&#125;
+  |Arcana,{{rname=Arcana&#125;&#125;{{mod=@{arcana_bonus}&#125;&#125; {{r1=[[1d20+@{arcana_bonus}]]&#125;&#125;{{r2=[[1d20+@{arcana_bonus}]]&#125;&#125;
+  |Athletics,{{rname=Athletics&#125;&#125;{{mod=@{athletics_bonus}&#125;&#125; {{r1=[[1d20+@{athletics_bonus}]]&#125;&#125;{{r2=[[1d20+@{athletics_bonus}]]&#125;&#125;
+  |Deception,{{rname=Deception&#125;&#125;{{mod=@{deception_bonus}&#125;&#125; {{r1=[[1d20+@{deception_bonus}]]&#125;&#125;{{r2=[[1d20+@{deception_bonus}]]&#125;&#125;
+  |History,{{rname=History&#125;&#125;{{mod=@{history_bonus}&#125;&#125; {{r1=[[1d20+@{history_bonus}]]&#125;&#125;{{r2=[[1d20+@{history_bonus}]]&#125;&#125;
+  |Insight,{{rname=Insight&#125;&#125;{{mod=@{insight_bonus}&#125;&#125; {{r1=[[1d20+@{insight_bonus}]]&#125;&#125;{{r2=[[1d20+@{insight_bonus}]]&#125;&#125;
+  |Intimidation,{{rname=Intimidation&#125;&#125;{{mod=@{intimidation_bonus}&#125;&#125; {{r1=[[1d20+@{intimidation_bonus}]]&#125;&#125;{{r2=[[1d20+@{intimidation_bonus}]]&#125;&#125;
+  |Investigation,{{rname=Investigation&#125;&#125;{{mod=@{investigation_bonus}&#125;&#125; {{r1=[[1d20+@{investigation_bonus}]]&#125;&#125;{{r2=[[1d20+@{investigation_bonus}]]&#125;&#125;
+  |Medicine,{{rname=Medicine&#125;&#125;{{mod=@{medicine_bonus}&#125;&#125; {{r1=[[1d20+@{medicine_bonus}]]&#125;&#125;{{r2=[[1d20+@{medicine_bonus}]]&#125;&#125;
+  |Nature,{{rname=Nature&#125;&#125;{{mod=@{nature_bonus}&#125;&#125; {{r1=[[1d20+@{nature_bonus}]]&#125;&#125;{{r2=[[1d20+@{nature_bonus}]]&#125;&#125;
+  |Perception,{{rname=Perception&#125;&#125;{{mod=@{perception_bonus}&#125;&#125; {{r1=[[1d20+@{perception_bonus}]]&#125;&#125;{{r2=[[1d20+@{perception_bonus}]]&#125;&#125;
+  |Performance,{{rname=Performance&#125;&#125;{{mod=@{performance_bonus}&#125;&#125; {{r1=[[1d20+@{performance_bonus}]]&#125;&#125;{{r2=[[1d20+@{performance_bonus}]]&#125;&#125;
+  |Persuasion,{{rname=Persuasion&#125;&#125;{{mod=@{persuasion_bonus}&#125;&#125; {{r1=[[1d20+@{persuasion_bonus}]]&#125;&#125;{{r2=[[1d20+@{persuasion_bonus}]]&#125;&#125;
+  |Religion,{{rname=Religion&#125;&#125;{{mod=@{religion_bonus}&#125;&#125; {{r1=[[1d20+@{religion_bonus}]]&#125;&#125;{{r2=[[1d20+@{religion_bonus}]]&#125;&#125;
+  |Sleight of Hand,{{rname=Sleight of Hand&#125;&#125;{{mod=@{sleight_of_hand_bonus}&#125;&#125; {{r1=[[1d20+@{sleight_of_hand_bonus}]]&#125;&#125;{{r2=[[1d20+@{sleight_of_hand_bonus}]]&#125;&#125;
+  |Stealth,{{rname=Stealth&#125;&#125;{{mod=@{stealth_bonus}&#125;&#125; {{r1=[[1d20+@{stealth_bonus}]]&#125;&#125;{{r2=[[1d20+@{stealth_bonus}]]&#125;&#125;
+  |Survival,{{rname=Survival&#125;&#125;{{mod=@{survival_bonus}&#125;&#125; {{r1=[[1d20+@{survival_bonus}]]&#125;&#125;{{r2=[[1d20+@{survival_bonus}]]&#125;&#125;
+} 
