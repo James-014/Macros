@@ -66,8 +66,14 @@
   {{dmg1=[[1d8]]}} {{dmg1type=Fire}} {{charname=@{selected|character_name}}}
   
 //Breath Weapon
-//Warcaster (Concentracion)
+&{template:dmg} {{rname=Breath Weapon}} {{range=30 ft line}} 
+{{damage=1}} {{dmg1flag=1}} {{dmg1=[[1d10]]}} {{dmg1type=Ligthning}} 
+{{save=1}} {{saveattr=DEX}}  {{savedc=[[8+@{pb}+@{constitution_mod}]]}} {{charname=@{selected|character_name}}}
+
 //Combat WildShape
+@{selected|wtype}&{template:dmg} {{rname=Combat WildShape}}{{range=Self}} {{damage=1}} {{dmg1flag=1}} 
+{{dmg1=[[[[(1*?{Cast at what level?|Level 1,1|Level 2,2|Level 3,2|Level 4,4|Level 5,5|Level 6,6|Level 7,7|Level 8,8|Level 9,8})d8]]+@{wisdom_mod}]]}} 
+{{dmg1type=Hp}} {{spelllevel=1}} {{charname=@{selected|character_name}}}
 
 //Unarmored
 &{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|strength_mod}]]}} {{rname=Unarmored}} 
@@ -94,12 +100,27 @@
 {{dmg1=[[1d10+@{selected|base_level}]]}} {{dmg1type=HP}} {{charname=@{selected|character_name}}}
 
 //Necrotic Shourd
+&{template:dmg} {{rname=Necrotic Shourd}} {{range=10 ft radio}} 
+{{save=1}} {{saveattr=DEX}}  {{savedc=[[8+@{pb}+@{charisma_mod}]]}} {{charname=@{selected|character_name}}}
+
 //Necrotic Shourd Damage
 &{template:atkdmg} {{rname=Necrotic Shourd Damage}} {{{attack=1}} {{damage=1}} {{dmg1flag=1}} 
 {{dmg1=[[@{selected|base_level}]]}} {{dmg1type=Necrotic}} {{charname=@{selected|character_name}}}
 
 //ShortBow
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|dexterity_mod}]]}} {{rname=Shortsword}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{attack=1}} 
+  {{range=320 ft}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d6+@{selected|dexterity_mod}]]}} {{dmg1type=Pircing}} {{charname=@{selected|character_name}}}
+  
 //ShortBow Hedashot
+&{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|dexterity_mod}]]}} {{rname=Shortsword}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|dexterity_mod}-5]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|dexterity_mod}-5]]}} {{attack=1}} 
+  {{range=320 ft}} {{damage=1}} {{dmg1flag=1}} 
+  {{dmg1=[[1d6+@{selected|dexterity_mod}+10]]}} {{dmg1type=Pircing}} {{charname=@{selected|character_name}}}
+
 //Shortsword
 &{template:atkdmg} {{mod=[[@{selected|pb}+@{selected|dexterity_mod}]]}} {{rname=Shortsword}} 
   {{r1=[[1d20+@{selected|pb}+@{selected|dexterity_mod}]]}} {{always=1}} 
