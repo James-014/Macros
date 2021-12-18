@@ -1,8 +1,7 @@
-@{selected|wtype} &{template:simple}{{always=1}}?{Saving Throw?
-  |STR,{{rname=Strength Save&#125;&#125;{{mod=@{selected|strength_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|strength_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|strength_save_bonus}]]&#125;&#125;
-  |DEX,{{rname=Dexterity Save&#125;&#125;{{mod=@{selected|dexterity_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|dexterity_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|dexterity_save_bonus}]]&#125;&#125;
-  |CON,{{rname=Constitution Save&#125;&#125;{{mod=@{selected|constitution_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|constitution_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|constitution_save_bonus}]]&#125;&#125;
-  |INT,{{rname=Intelligence Save&#125;&#125;{{mod=@{selected|inteligence_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|inteligence_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|inteligence_save_bonus}]]&#125;&#125;
-  |WIS,{{rname=Wisdom Save&#125;&#125;{{mod=@{selected|wisdom_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|wisdom_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|wisdom_save_bonus}]]&#125;&#125;
-  |CHA,{{rname=Charisma Save&#125;&#125;{{mod=@{selected|charisma_save_bonus}&#125;&#125; {{r1=[[1d20+@{selected|charisma_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{selected|charisma_save_bonus}]]&#125;&#125;
-}{{charname=@{character_name}}} 
+@{selected|wtype} &{template:simple}{{always=1}}{{charname=@{character_name}}}?{Saving Throw?
+|STR,{{rname=Strength Save&#125;&#125;{{mod=@{strength_save_bonus}&#125;&#125; {{r1=[[1d20+@{strength_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{strength_save_bonus}]]&#125;&#125;
+|DEX,{{rname=Dexterity Save&#125;&#125;{{mod=@{dexterity_save_bonus}&#125;&#125; {{r1=[[1d20+@{dexterity_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{dexterity_save_bonus}]]&#125;&#125;
+|CON,{{rname=Constitution Save&#125;&#125;{{mod=@{constitution_save_bonus}&#125;&#125; {{r1=[[1d20+@{constitution_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{constitution_save_bonus}]]&#125;&#125;
+|INT,{{rname=Intelligence Save&#125;&#125;{{mod=@{intelligence_save_bonus}&#125;&#125; {{r1=[[1d20+@{intelligence_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{intelligence_save_bonus}]]&#125;&#125;
+|WIS,{{rname=Wisdom Save&#125;&#125;{{mod=@{wisdom_save_bonus}&#125;&#125; {{r1=[[1d20+@{wisdom_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{wisdom_save_bonus}]]&#125;&#125;
+|CHA,{{rname=Charisma Save&#125;&#125;{{mod=@{charisma_save_bonus}&#125;&#125; {{r1=[[1d20+@{charisma_save_bonus}]]&#125;&#125;{{r2=[[1d20+@{charisma_save_bonus}]]&#125;&#125;}
