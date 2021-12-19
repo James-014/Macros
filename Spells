@@ -1,0 +1,8 @@
+//Spell Save DC 
+&{template:simple} {{rname=Spell Save DC}} {{r1=[[@{selected|spell_save_dc}]]}} {{normal=1}} {{charname=@{selected|character_name}}}
+//Spell atack Wisdom
+&{template:simple} {{rname=Spell Attack}} {{mod=[[@{selected|pb}+@{selected|wisdom_mod}]]}}} {{mod=[[@{selected|pb}+@{selected|wisdom_mod}]]}} {{rname=Shillelagh}} 
+  {{r1=[[1d20+@{selected|pb}+@{selected|wisdom_mod}]]}} {{always=1}} 
+  {{r2=[[1d20+@{selected|pb}+@{selected|wisdom_mod}]]}} {{charname=@{selected|character_name}}}
+//Spell atack Charisma
+&{template:simple} {{rname=Spell Attack}} {{mod=[[@{selected|pb}+@{selected|charisma_mod}]]}}} {{mod=[[@{selected|pb}+@{selected|charisma_mod}]]}} {{r1=[[1d20+@{selected|pb}+@{selected|charisma_mod}]]}} {{always=1}} {{r2=[[1d20+@{selected|pb}+@{selected|charisma_mod}]]}} {{charname=@{selected|character_name}}}
