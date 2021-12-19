@@ -20,8 +20,10 @@
   {{dmg1=[[1d6+1+@{selected|strength_mod}]]}} {{dmg1type=Piercing}} {{charname=@{selected|character_name}}}
   
 //Divine Smite
-&{template:atkdmg} {{rname=Divine Smite}} {{{attack=1}} {{damage=1}} {{dmg1flag=1}} 
-  {{dmg1=[[2d8]]}} {{dmg1type=Radiant}} {{charname=@{selected|character_name}}}
+@{selected|wtype} &{template:atkdmg} {{rname=Divine Smite}} {{{attack=1}} {{damage=1}} {{dmg1flag=1}}
+{{dmg1=[[2d8+[[(1*?{Cast at what level?|Level 1,0|Level 2,1|Level 3,2|Level 4+,3})d8]]+[[(1*?{Fiend or Undead?|Yes,1|No,0})d8]]]]}} 
+{{dmg1type=Radiant}} {{charname=@{selected|character_name}}}
+
 //Inspiring Smite
 &{template:atkdmg} {{rname=Inspiring Smite}} {{{attack=1}} {{damage=1}} {{dmg1flag=1}} 
   {{dmg1=[[2d8+@{selected|base_level}]]}} {{dmg1type=TempHP}} {{charname=@{selected|character_name}}}
