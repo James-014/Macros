@@ -1,0 +1,2 @@
+//Bolsa de Dados
+&{template:simple} {{r1=[[?{Numero}d?{Tipo de Dado}]]}} {{normal=1}} {{charname=@{selected|character_name}}}
